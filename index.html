@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pri-Whis- Em Health | Board-Certified OBGYN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8B5FBF',
+                        secondary: '#FF7EAA',
+                        accent: '#4FD1C5',
+                        dark: '#2D3748',
+                        light: '#F7FAFC'
+                    }
+                }
+            }
+        }
+    </script>
+
+
+
+<style>
+/* From Uiverse.io by jawad_8494 */ 
+.super-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 28px;
+  background: linear-gradient(145deg, #0f0f0f, #1c1c1c);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  z-index: 1;
+}
+
+.super-button::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: conic-gradient(from 0deg, #00ffff, #ff00ff, #00ffff);
+  animation: rotate 4s linear infinite;
+  z-index: -2;
+}
+
+.super-button::after {
+  content: "";
+  position: absolute;
+  inset: 2px;
+  background: #0a0a0a;
+  border-radius: inherit;
+  z-index: -1;
+}
+
+.super-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.2);
+}
+
+.super-button:hover .arrow {
+  transform: translateX(6px);
+}
+
+.arrow {
+  width: 22px;
+  height: 22px;
+  transition: transform 0.3s ease-in-out;
+  color: #00ffff;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+/* From Uiverse.io by Ashon-G */ 
+.uiverse {
+  --duration: 7s;
+  --easing: linear;
+  --c-color-1: rgba(255, 163, 26, 0.7);
+  --c-color-2: #1a23ff;
+  --c-color-3: #e21bda;
+  --c-color-4: rgba(255, 232, 26, 0.7);
+  --c-shadow: rgba(255, 223, 87, 0.5);
+  --c-shadow-inset-top: rgba(255, 223, 52, 0.9);
+  --c-shadow-inset-bottom: rgba(255, 250, 215, 0.8);
+  --c-radial-inner: #ffd215;
+  --c-radial-outer: #fff172;
+  --c-color: #fff;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  display: table;
+  border-radius: 24px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  color: var(--c-color);
+  background: radial-gradient(
+    circle,
+    var(--c-radial-inner),
+    var(--c-radial-outer) 80%
+  );
+  box-shadow: 0 0 14px var(--c-shadow);
+}
+
+.uiverse:before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 24px;
+  box-shadow:
+    inset 0 3px 12px var(--c-shadow-inset-top),
+    inset 0 -3px 4px var(--c-shadow-inset-bottom);
+}
+
+.uiverse .wrapper {
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  overflow: hidden;
+  border-radius: 24px;
+  min-width: 132px;
+  padding: 12px 0;
+}
+
+.uiverse .wrapper span {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.uiverse:hover {
+  --duration: 1400ms;
+}
+
+.uiverse .wrapper .circle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  filter: blur(var(--blur, 8px));
+  background: var(--background, transparent);
+  transform: translate(var(--x, 0), var(--y, 0)) translateZ(0);
+  animation: var(--animation, none) var(--duration) var(--easing) infinite;
+}
+
+.uiverse .wrapper .circle.circle-1,
+.uiverse .wrapper .circle.circle-9,
+.uiverse .wrapper .circle.circle-10 {
+  --background: var(--c-color-4);
+}
+
+.uiverse .wrapper .circle.circle-3,
+.uiverse .wrapper .circle.circle-4 {
+  --background: var(--c-color-2);
+  --blur: 14px;
+}
+
+.uiverse .wrapper .circle.circle-5,
+.uiverse .wrapper .circle.circle-6 {
+  --background: var(--c-color-3);
+  --blur: 16px;
+}
+
+.uiverse .wrapper .circle.circle-2,
+.uiverse .wrapper .circle.circle-7,
+.uiverse .wrapper .circle.circle-8,
+.uiverse .wrapper .circle.circle-11,
+.uiverse .wrapper .circle.circle-12 {
+  --background: var(--c-color-1);
+  --blur: 12px;
+}
+
+.uiverse .wrapper .circle.circle-1 {
+  --x: 0;
+  --y: -40px;
+  --animation: circle-1;
+}
+
+.uiverse .wrapper .circle.circle-2 {
+  --x: 92px;
+  --y: 8px;
+  --animation: circle-2;
+}
+
+.uiverse .wrapper .circle.circle-3 {
+  --x: -12px;
+  --y: -12px;
+  --animation: circle-3;
+}
+
+.uiverse .wrapper .circle.circle-4 {
+  --x: 80px;
+  --y: -12px;
+  --animation: circle-4;
+}
+
+.uiverse .wrapper .circle.circle-5 {
+  --x: 12px;
+  --y: -4px;
+  --animation: circle-5;
+}
+
+.uiverse .wrapper .circle.circle-6 {
+  --x: 56px;
+  --y: 16px;
+  --animation: circle-6;
+}
+
+.uiverse .wrapper .circle.circle-7 {
+  --x: 8px;
+  --y: 28px;
+  --animation: circle-7;
+}
+
+.uiverse .wrapper .circle.circle-8 {
+  --x: 28px;
+  --y: -4px;
+  --animation: circle-8;
+}
+
+.uiverse .wrapper .circle.circle-9 {
+  --x: 20px;
+  --y: -12px;
+  --animation: circle-9;
+}
+
+.uiverse .wrapper .circle.circle-10 {
+  --x: 64px;
+  --y: 16px;
+  --animation: circle-10;
+}
+
+.uiverse .wrapper .circle.circle-11 {
+  --x: 4px;
+  --y: 4px;
+  --animation: circle-11;
+}
+
+.uiverse .wrapper .circle.circle-12 {
+  --blur: 14px;
+  --x: 52px;
+  --y: 4px;
+  --animation: circle-12;
+}
+
+@keyframes circle-1 {
+  33% {
+    transform: translate(0px, 16px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(12px, 64px) translateZ(0);
+  }
+}
+
+@keyframes circle-2 {
+  33% {
+    transform: translate(80px, -10px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(72px, -48px) translateZ(0);
+  }
+}
+
+@keyframes circle-3 {
+  33% {
+    transform: translate(20px, 12px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(12px, 4px) translateZ(0);
+  }
+}
+
+@keyframes circle-4 {
+  33% {
+    transform: translate(76px, -12px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(112px, -8px) translateZ(0);
+  }
+}
+
+@keyframes circle-5 {
+  33% {
+    transform: translate(84px, 28px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(40px, -32px) translateZ(0);
+  }
+}
+
+@keyframes circle-6 {
+  33% {
+    transform: translate(28px, -16px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(76px, -56px) translateZ(0);
+  }
+}
+
+@keyframes circle-7 {
+  33% {
+    transform: translate(8px, 28px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(20px, -60px) translateZ(0);
+  }
+}
+
+@keyframes circle-8 {
+  33% {
+    transform: translate(32px, -4px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(56px, -20px) translateZ(0);
+  }
+}
+
+@keyframes circle-9 {
+  33% {
+    transform: translate(20px, -12px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(80px, -8px) translateZ(0);
+  }
+}
+
+@keyframes circle-10 {
+  33% {
+    transform: translate(68px, 20px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(100px, 28px) translateZ(0);
+  }
+}
+
+@keyframes circle-11 {
+  33% {
+    transform: translate(4px, 4px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(68px, 20px) translateZ(0);
+  }
+}
+
+@keyframes circle-12 {
+  33% {
+    transform: translate(56px, 0px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(60px, -32px) translateZ(0);
+  }
+}
+
+
+
+</style>
+
+
+
+
+</head>
+<body class="bg-gray-50 font-sans scroll-smooth">
+<div id="top" class="absolute top-0 left-0 w-full"></div>
+
+<nav class="fixed top-0 left-0 w-full bg-gradient-to-r from-primary to-secondary text-white shadow-md z-50">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+        <!-- Logo -->
+        <a href="#top" class="flex items-center space-x-2">
+            <img src="https://imgur.com/02jnxRA.png" alt="Pri-Whis- Em Health Logo" class="h-10 w-auto">
+            <span class="text-xl font-bold tracking-wide"></span>
+        </a>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden md:flex space-x-8 text-white font-medium">
+            <li><a href="#top" class="hover:text-gray-200 transition">Home</a></li>
+            <li><a href="#about" class="hover:text-gray-200 transition">About</a></li>
+            <li><a href="#services" class="hover:text-gray-200 transition">Services</a></li>
+            <li><a href="#insurance" class="hover:text-gray-200 transition">Insurance</a></li>
+            <li><a href="#contact" class="hover:text-gray-200 transition">Contact</a></li>
+        </ul>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-toggle" class="md:hidden focus:outline-none">
+            <i data-feather="menu" class="w-6 h-6"></i>
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden bg-primary bg-opacity-95 md:hidden text-center py-4 space-y-4">
+        <a href="#top" class="block text-white hover:text-gray-200">Home</a>
+        <a href="#about" class="block text-white hover:text-gray-200">About</a>
+        <a href="#services" class="block text-white hover:text-gray-200">Services</a>
+        <a href="#insurance" class="block text-white hover:text-gray-200">Insurance</a>
+        <a href="#contact" class="block text-white hover:text-gray-200">Contact</a>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+<!-- Hero Section -->
+<section class="bg-gradient-to-r from-primary to-secondary text-black py-20 px-4 mt-16">
+    <div class="container mx-auto text-center max-w-3xl">
+        <!-- Main Headline with SEO keywords -->
+        <h1 class="text-4xl md:text-5xl font-extrabold mb-6 text-black">
+            Expert OBGYN Care in Mobile, AL | Pri-Whis- Em Health
+        </h1>
+        
+        <!-- Description with strong SEO keywords -->
+        <p class="text-xl mb-8 leading-relaxed text-black">
+            Pri-Whis- Em Health is your trusted <strong>board-certified OBGYN clinic in Mobile, Alabama</strong>. 
+            Led by <strong>Dr. Royshanda Smith, MD</strong>, a fellowship-trained <strong>laparoscopic and robotic surgeon</strong>, 
+            we provide comprehensive <strong>women's health services</strong> including <strong>preventive screenings</strong>, 
+            <strong>reproductive care</strong>, <strong>minimally invasive surgery</strong>, <strong>menopause management</strong>, 
+            <strong>hormone replacement therapy</strong>, and <strong>aesthetic treatments</strong>. 
+            Weekend and late evening appointments are available. <strong>Medicaid, Medicare, and major insurance accepted</strong>.
+        </p>
+        
+        <!-- Action Buttons -->
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+            <a href="tel:2517534328" class="super-button bg-black text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-gray-800 transition duration-300">
+                📞 Call Now
+            </a>
+            <a href="mailto:priwhisem@gmail.com" class="super-button bg-black text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-gray-800 transition duration-300">
+                📧 Email Us
+            </a>
+            <a href="#contact" class="super-button bg-accent text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-accent-dark transition duration-300">
+                📅 Book Appointment
+            </a>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <!-- About Section -->
+<section id="about" class="py-16 px-4 bg-gradient-to-r from-primary to-secondary text-black">
+    <div class="container mx-auto max-w-6xl">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <!-- Image -->
+            <div class="md:w-1/2">
+                <img src="https://imgur.com/qkT8504.png" 
+                     alt="Dr. Royshanda Smith, MD with patient" 
+                     class="rounded-xl shadow-2xl w-full border-4 border-white/30">
+            </div>
+
+            <!-- About Content -->
+            <div class="md:w-1/2">
+                <h2 class="text-4xl font-bold text-black mb-6">About Dr. Royshanda Smith, MD</h2>
+                <p class="text-lg text-black mb-4 leading-relaxed">
+                    Dr. Royshanda Smith is a board-certified OBGYN and fellowship-trained laparoscopic and robotic surgeon 
+                    dedicated to providing compassionate, patient-centered women’s healthcare. 
+                    She combines cutting-edge medical technology with personalized care to support every stage of a woman’s health journey.
+                </p>
+
+                <ul class="space-y-3 mb-6 text-black">
+                    <li class="flex items-start">
+                        <i data-feather="check-circle" class="text-black mr-2"></i>
+                        Board-Certified Obstetrician and Gynecologist
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check-circle" class="text-black mr-2"></i>
+                        Fellowship-Trained in Advanced Laparoscopic & Robotic Surgery
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check-circle" class="text-black mr-2"></i>
+                        Convenient Weekend and Evening Appointments Available
+                    </li>
+                    <li class="flex items-start">
+                        <i data-feather="check-circle" class="text-black mr-2"></i>
+                        Accepts Medicaid, Medicare, and Most Major Insurance Plans
+                    </li>
+                </ul>
+
+                <!-- Learn More Button -->
+                <button class="super-button learn-more bg-black hover:bg-gray-800 text-white font-semibold py-2 px-5 rounded-full transition mb-4">
+                    Learn More About Dr. Smith
+                </button>
+
+                <!-- Hidden Extended Description -->
+               <div class="">
+    <p class="text-md leading-relaxed text-black">
+        With over a decade of experience, Dr. Smith has built a trusted reputation for excellence in women’s health. 
+        She focuses on preventive care, minimally invasive surgery, fertility support, and menopause management 
+        helping patients feel heard, understood, and empowered. 
+        Dr. Smith is passionate about advancing women’s wellness through education, innovation, and holistic care.
+    </p>
+    <p class="mt-3 text-md leading-relaxed text-black">
+        Her approach blends evidence-based medicine with compassion, making every patient visit comfortable, informative, 
+        and uniquely tailored to each woman’s needs. From adolescent care to menopause, Dr. Smith provides 
+        comprehensive support throughout all stages of life.
+    </p>
+</div> 
+                <a href="#services" 
+                   class="super-button bg-black hover:bg-gray-800 text-white font-semibold py-2 px-6 rounded-full shadow-lg transition flex items-center mt-6 inline-block">
+                    View Our Services
+                    <i data-feather="arrow-right" class="ml-2 w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Script -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    feather.replace();
+
+    document.querySelectorAll('.learn-more').forEach(button => {
+        button.addEventListener('click', () => {
+            const description = button.nextElementSibling;
+            description.classList.toggle('hidden');
+            button.textContent = description.classList.contains('hidden') 
+                ? 'Learn More About Dr. Smith' 
+                : 'Hide Details';
+        });
+    });
+});
+</script>
+
+
+
+   
+<!-- Services Section -->
+<section id="services" class="py-16 px-4 bg-gradient-to-r from-primary to-secondary text-black">
+  <div class="container mx-auto max-w-6xl">
+    <h2 class="text-3xl font-extrabold text-center text-black mb-12">
+      Our Specialized Women's Health Services
+    </h2>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Service Card Template -->
+      <div class="service-card bg-white bg-opacity-30 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+        <div class="p-6">
+          <div class="text-black mb-4 flex justify-center">
+            <i data-feather="heart" class="w-10 h-10"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-black text-center">Preventive Care</h3>
+          <ul class="space-y-2 text-black text-center">
+            <li>Annual Exams & Screenings</li>
+            <li>STD Testing</li>
+            <li>Pap Smears</li>
+            <li>Breast Health</li>
+          </ul>
+          <button class="super-button learn-more mt-4 bg-black hover:bg-gray-800 text-white font-semibold py-2 px-4 rounded transition w-full">
+            Learn More
+          </button>
+          <div class="description hidden mt-4 text-black text-center transition-all duration-500 ease-in-out">
+            <p>
+              Stay proactive about your health with our complete preventive care services.
+              From yearly well-woman exams to cervical and breast screenings, we focus on
+              early detection and overall wellness to help you maintain a healthy lifestyle.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Card 2 -->
+      <div class="service-card bg-white bg-opacity-30 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+        <div class="p-6">
+          <div class="text-black mb-4 flex justify-center">
+            <i data-feather="activity" class="w-10 h-10"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-black text-center">Reproductive Health</h3>
+          <ul class="space-y-2 text-black text-center">
+            <li>Contraception Counseling</li>
+            <li>Fertility Evaluation</li>
+            <li>Abnormal Bleeding</li>
+            <li>PCOS Management</li>
+          </ul>
+          <button class="super-button learn-more mt-4 bg-black hover:bg-gray-800 text-white font-semibold py-2 px-4 rounded transition w-full">
+            Learn More
+          </button>
+          <div class="description hidden mt-4 text-black text-center transition-all duration-500 ease-in-out">
+            <p>
+              Our reproductive health services provide personalized care for all stages of life.
+              Whether you're exploring fertility options, managing menstrual irregularities,
+              or seeking contraceptive advice, our team ensures comfort, education, and privacy
+              in every visit.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Card 3 -->
+      <div class="service-card bg-white bg-opacity-30 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+        <div class="p-6">
+          <div class="text-black mb-4 flex justify-center">
+            <i data-feather="scissors" class="w-10 h-10"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-black text-center">Minimally Invasive Surgery</h3>
+          <ul class="space-y-2 text-black text-center">
+            <li>Robotic-Assisted Surgery</li>
+            <li>Fibroid Treatment</li>
+            <li>Endometriosis Management</li>
+            <li>Hysterectomy Alternatives</li>
+          </ul>
+          <button class="super-button learn-more mt-4 bg-black hover:bg-gray-800 text-white font-semibold py-2 px-4 rounded transition w-full">
+            Learn More
+          </button>
+          <div class="description hidden mt-4 text-black text-center transition-all duration-500 ease-in-out">
+            <p>
+              Experience advanced surgical options with faster recovery and less discomfort.
+              Our team provides cutting-edge gynecologic procedures to treat fibroids,
+              endometriosis, and other conditions with precision and care.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Card 4 -->
+      <div class="service-card bg-white bg-opacity-30 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+        <div class="p-6">
+          <div class="text-black mb-4 flex justify-center">
+            <i data-feather="thermometer" class="w-10 h-10"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-black text-center">Menopause Care</h3>
+          <ul class="space-y-2 text-black text-center">
+            <li>Hormone Replacement Therapy</li>
+            <li>Bone Health Management</li>
+            <li>Symptom Relief</li>
+            <li>Sexual Wellness Support</li>
+          </ul>
+          <button class="super-button learn-more mt-4 bg-black hover:bg-gray-800 text-white font-semibold py-2 px-4 rounded transition w-full">
+            Learn More
+          </button>
+          <div class="description hidden mt-4 text-black text-center transition-all duration-500 ease-in-out">
+            <p>
+              We offer compassionate menopause care to help you transition smoothly through
+              this natural stage. Our hormone management and holistic treatments promote
+              balance, energy, and long-term well-being.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Card 5 -->
+      <div class="service-card bg-white bg-opacity-30 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+        <div class="p-6">
+          <div class="text-black mb-4 flex justify-center">
+            <i data-feather="droplet" class="w-10 h-10"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-black text-center">Aesthetic Services</h3>
+          <ul class="space-y-2 text-black text-center">
+            <li>Botox Treatments</li>
+            <li>Dermal Fillers</li>
+            <li>Vaginal Rejuvenation</li>
+            <li>Medical Weight Loss</li>
+          </ul>
+          <button class="super-button learn-more mt-4 bg-black hover:bg-gray-800 text-white font-semibold py-2 px-4 rounded transition w-full">
+            Learn More
+          </button>
+          <div class="description hidden mt-4 text-black text-center transition-all duration-500 ease-in-out">
+            <p>
+              Look and feel your best with our aesthetic solutions. From facial rejuvenation
+              to medically supervised weight loss, we combine beauty and wellness for a confident, radiant you.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service Card 6 -->
+      <div class="service-card bg-white bg-opacity-30 rounded-xl shadow-lg hover:shadow-2xl transition duration-300">
+        <div class="p-6">
+          <div class="text-black mb-4 flex justify-center">
+            <i data-feather="calendar" class="w-10 h-10"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3 text-black text-center">Pregnancy Care</h3>
+          <ul class="space-y-2 text-black text-center">
+            <li>Preconception Counseling</li>
+            <li>High-Risk Pregnancy Support</li>
+            <li>Postpartum Care</li>
+            <li>Lactation Guidance</li>
+          </ul>
+          <button class="super-button learn-more mt-4 bg-black hover:bg-gray-800 text-white font-semibold py-2 px-4 rounded transition w-full">
+            Learn More
+          </button>
+          <div class="description hidden mt-4 text-black text-center transition-all duration-500 ease-in-out">
+            <p>
+              We provide compassionate care throughout your pregnancy journey. From prenatal visits
+              to postpartum recovery, our goal is to ensure a safe, healthy, and empowering experience
+              for both mother and baby.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+      <!-- Add more service cards as needed, same structure -->
+
+    </div>
+  </div>
+</section>
+
+<section id="insurance" class="py-16 px-4 bg-gradient-to-r from-primary to-secondary text-black">
+    <div class="container mx-auto max-w-5xl text-center">
+        <h2 class="text-3xl font-bold mb-6 text-black">We Accept Most Insurance Plans</h2>
+        <p class="text-xl mb-8 text-black">
+            Pri-Whis-Em Health proudly partners with Medicaid, Medicare, and all major commercial insurers to make quality women’s healthcare accessible for every patient.
+        </p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+            <!-- Medicaid -->
+            <div class="bg-white bg-opacity-20 p-6 rounded-lg shadow-lg text-black font-semibold hover:shadow-xl transition duration-300">
+                <h3 class="text-lg font-bold mb-2">Medicaid</h3>
+                <p class="text-sm text-gray-900 mb-3">Comprehensive coverage for qualifying patients.</p>
+            </div>
+
+            <!-- Medicare -->
+            <div class="bg-white bg-opacity-20 p-6 rounded-lg shadow-lg text-black font-semibold hover:shadow-xl transition duration-300">
+                <h3 class="text-lg font-bold mb-2">Medicare</h3>
+                <p class="text-sm text-gray-900 mb-3">Trusted coverage for senior and disabled patients.</p>
+            </div>
+
+            <!-- Blue Cross -->
+            <div class="bg-white bg-opacity-20 p-6 rounded-lg shadow-lg text-black font-semibold hover:shadow-xl transition duration-300">
+                <h3 class="text-lg font-bold mb-2">Blue Cross</h3>
+                <p class="text-sm text-gray-900 mb-3">Comprehensive plans for individuals and families.</p>
+            </div>
+
+            <!-- Aetna -->
+            <div class="bg-white bg-opacity-20 p-6 rounded-lg shadow-lg text-black font-semibold hover:shadow-xl transition duration-300">
+                <h3 class="text-lg font-bold mb-2">Aetna</h3>
+                <p class="text-sm text-gray-900 mb-3">Modern health coverage with flexible care options.</p>
+            </div>
+        </div>
+
+        <a href="#contact" class="super-button bg-black text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-gray-800 transition duration-300">
+            Verify Your Coverage
+        </a>
+    </div>
+</section>
+
+
+
+<!-- Script -->
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  feather.replace();
+
+  function toggleSection(button, content) {
+    if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+      // Close
+      content.style.maxHeight = "0px";
+      content.style.opacity = "0";
+      button.textContent = "Learn More";
+    } else {
+      // Open
+      content.style.maxHeight = content.scrollHeight + "px";
+      content.style.opacity = "1";
+      button.textContent = "Hide Details";
+    }
+  }
+
+  // Services
+  document.querySelectorAll(".learn-more").forEach(button => {
+    const content = button.nextElementSibling;
+    content.style.maxHeight = "0px"; // start closed
+    content.style.opacity = "0";      // start hidden
+    button.addEventListener("click", () => toggleSection(button, content));
+  });
+
+  // Insurance
+  document.querySelectorAll(".learn-more-insurance").forEach(button => {
+    const content = button.nextElementSibling;
+    content.style.maxHeight = "0px"; // start closed
+    content.style.opacity = "0";      // start hidden
+    button.addEventListener("click", () => toggleSection(button, content));
+  });
+});
+</script>
+
+
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 px-4 bg-gradient-to-r from-primary to-secondary text-black">
+  <div class="container mx-auto max-w-6xl">
+    <h2 class="text-4xl font-bold text-center text-black mb-12">
+      Contact Our Office
+    </h2>
+
+    <div class="flex flex-col md:flex-row gap-12">
+      <!-- Contact Form -->
+      <div class="md:w-1/2">
+        <div class="bg-white/90 p-8 rounded-2xl shadow-2xl border border-gray-200">
+          <h3 class="text-2xl font-bold mb-6 text-black">
+            Send Us a Message
+          </h3>
+          <!-- Formspree Form -->
+          <form 
+            action="https://formspree.io/f/YOUR_FORM_ID" 
+            method="POST" 
+            class="space-y-4"
+          >
+            <input 
+              type="text" 
+              name="name" 
+              placeholder="Full Name" 
+              class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black focus:border-transparent text-black" 
+              required 
+            />
+            <input 
+              type="email" 
+              name="email" 
+              placeholder="Email" 
+              class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black focus:border-transparent text-black" 
+              required 
+            />
+            <input 
+              type="tel" 
+              name="phone" 
+              placeholder="Phone" 
+              class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black focus:border-transparent text-black" 
+              required 
+            />
+            <textarea 
+              name="message" 
+              rows="4" 
+              placeholder="Message" 
+              class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black focus:border-transparent text-black"
+              required
+            ></textarea>
+            <button 
+              type="submit" 
+              class="super-button bg-black hover:bg-gray-800 text-white font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300 w-full"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Office Information -->
+      <div class="md:w-1/2">
+        <div class="bg-white/90 p-8 rounded-2xl shadow-2xl border border-gray-200 h-full">
+          <h3 class="text-2xl font-bold mb-6 text-black">
+            Office Information
+          </h3>
+
+          <p class="mb-3 text-black">
+            <strong>Address:</strong>
+            <a href="https://www.google.com/maps?q=107+E+Love+Joy+Loop,+Mobile,+AL+36610" target="_blank" class="text-black underline hover:text-gray-700">
+              107 E Love Joy Loop, Mobile, AL 36610
+            </a>
+          </p>
+
+          <p class="mb-3 text-black">
+            <strong>Phone:</strong>
+            <a href="tel:2517534328" class="text-black underline hover:text-gray-700 font-semibold">(251) 753-4328</a>
+          </p>
+
+          <p class="mb-3 text-black">
+            <strong>Fax:</strong> 251-396-7471
+          </p>
+
+          <p class="mb-3 text-black">
+            <strong>Email:</strong>
+            <a href="mailto:priwhisem@gmail.com" class="text-black underline hover:text-gray-700">priwhisem@gmail.com</a>
+          </p>
+
+          <p class="mb-6 text-black">
+            <strong>Hours:</strong> Mon–Fri: 8am–5pm • Sat: 9am–1pm <br />
+            Weekend & Evening Appointments Available
+          </p>
+
+          <!-- 3D Street View Embed -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!4v1701321700000!6m8!1m7!1sCAoSLEFGMVFpcE1yV0RmcHlfT2x0bHFKTVNsSm9vU0xkY2h5TWtNZkp6WnZ0QkFh!2m2!1d30.7326055!2d-88.0806269!3f128.46!4f10.83!5f0.7820865974627469"
+            width="100%"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            class="rounded-lg"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Footer -->
+<footer class="bg-gradient-to-r from-primary to-secondary text-black py-12">
+  <div class="container mx-auto max-w-6xl px-4">
+    <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-10">
+
+      <!-- About / Logo -->
+      <div class="md:w-1/3">
+        <h3 class="text-2xl font-bold mb-4 text-black">Pri-Whis-Em Health</h3>
+        <p class="text-black leading-relaxed">
+          Providing quality women's healthcare with compassion, innovation, and expertise. Our mission is to empower women at every stage of life.
+        </p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="md:w-1/3">
+        <h3 class="text-xl font-semibold mb-4 text-black">Quick Links</h3>
+        <ul class="space-y-2">
+          <li><a href="#services" class="hover:text-gray-700 transition duration-200 text-black">Services</a></li>
+          <li><a href="#insurance" class="hover:text-gray-700 transition duration-200 text-black">Insurance</a></li>
+          <li><a href="#about" class="hover:text-gray-700 transition duration-200 text-black">About Us</a></li>
+          <li><a href="#contact" class="hover:text-gray-700 transition duration-200 text-black">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="md:w-1/3">
+        <h3 class="text-xl font-semibold mb-4 text-black">Contact Us</h3>
+        <p class="mb-2 text-black"><strong>Address:</strong> 107 E Love Joy Loop, Mobile, AL 36610</p>
+        <p class="mb-2 text-black"><strong>Phone:</strong> <a href="tel:2517534328" class="underline hover:text-gray-700 text-black">(251) 753-4328</a></p>
+        <p class="mb-2 text-black"><strong>Email:</strong> <a href="mailto:priwhisem@gmail.com" class="underline hover:text-gray-700 text-black">priwhisem@gmail.com</a></p>
+        <p class="mb-4 text-black"><strong>Hours:</strong> Mon–Fri: 8am–5pm • Sat: 9am–1pm</p>
+        
+        <!-- Social Icons -->
+        <div class="flex space-x-4 mt-2">
+          <a href="#" class="hover:text-gray-700 transition duration-200 text-black">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M22.46 6c-.77.35-1.6.59-2.46.69a4.3 4.3 0 001.88-2.37 8.59 8.59 0 01-2.72 1.04 4.28 4.28 0 00-7.3 3.9 12.14 12.14 0 01-8.8-4.46 4.28 4.28 0 001.32 5.71 4.25 4.25 0 01-1.94-.54v.05a4.28 4.28 0 003.44 4.19 4.3 4.3 0 01-1.93.07 4.28 4.28 0 003.99 2.97A8.58 8.58 0 012 19.54a12.1 12.1 0 006.56 1.92c7.88 0 12.2-6.52 12.2-12.19l-.01-.56A8.7 8.7 0 0024 4.56a8.6 8.6 0 01-2.54.7z"/>
+            </svg>
+          </a>
+          <a href="#" class="hover:text-gray-700 transition duration-200 text-black">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2.04c-5.51 0-9.96 4.45-9.96 9.96 0 4.41 2.87 8.16 6.84 9.48v-6.7H8.91V12h2.01V9.79c0-2 1.2-3.1 3-3.1.87 0 1.78.15 1.78.15v1.96h-1c-.99 0-1.3.62-1.3 1.25V12h2.22l-.36 2.78h-1.86v6.7c3.97-1.32 6.84-5.07 6.84-9.48 0-5.51-4.45-9.96-9.96-9.96z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom -->
+    <div class="border-t border-black/30 mt-10 pt-6 text-center text-black">
+      &copy; 2025 Pri-Whis-Em Health. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+
+ <script>
+document.addEventListener("DOMContentLoaded", () => {
+    // Feather icons
+    feather.replace();
+
+    // Mobile menu toggle
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+    });
+});
+</script>
+
+
+</body>
+</html>
