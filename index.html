@@ -933,7 +933,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <!-- Formspree Form (AJAX-enabled) -->
           <form 
             id="contactForm" 
-            action="https://formspree.io/f/mnnorpln" 
+            action="https://formspree.io/f/mgvpqlon" 
             method="POST" 
             class="space-y-4"
           >
@@ -965,6 +965,9 @@ document.addEventListener("DOMContentLoaded", () => {
               class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-black focus:border-transparent text-black"
               required
             ></textarea>
+
+            <!-- reply-to ensures messages go to your Gmail -->
+            <input type="hidden" name="_replyto" value="priwhisem@gmail.com">
 
             <button 
               type="submit" 
@@ -1040,7 +1043,6 @@ document.getElementById("contactForm").addEventListener("submit", async function
   const formMessage = document.getElementById("formMessage");
   const formData = new FormData(form);
 
-  // Show "Sending..." while submitting
   button.disabled = true;
   button.textContent = "Sending...";
 
@@ -1067,6 +1069,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
   button.disabled = false;
 });
 </script>
+
 
 
 
